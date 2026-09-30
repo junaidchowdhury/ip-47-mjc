@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Booking Card</title>
+    <link rel="stylesheet" href="trial.css">
+    <style>
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(212, 210, 210);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+  
+
+  .hotel-card {
+    display: flex;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.297);
+    width: 700px;
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .hotel-card:hover{
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.699);
+  }
+  
+
+  .hotel-image {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .hotel-info {
+    flex-grow: 1;
+    padding: 10px 15px;
+  }
+  
+  .hotel-info h2 {
+    margin: 0;
+    font-size: 18px;
+    color: #FF5400;
+  }
+  
+  .stars {
+    color: gold;
+  }
+  
+  .location {
+    color: #666;
+    font-size: 14px;
+  }
+  
+  .feature {
+    font-size: 14px;
+    color: #008009;
+    margin: 5px 0;
+  }
+  
+  .room-type {
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .benefits {
+    font-size: 13px;
+    color: #007600;
+    margin-top: 5px;
+  }
+  
+  .price-section {
+    text-align: right;
+    padding: 10px;
+  }
+  
+  .review-score {
+    background: #003580;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 14px;
+  }
+  
+  .review-score span {
+    font-size: 12px;
+    color: #333;
+    margin-left: 5px;
+  }
+  
+  .price {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 5px 0;
+  }
+  
+  .taxes {
+    font-size: 12px;
+    color: #777;
+  }
+  
+  .availability-btn {
+    background: #FF5400;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .availability-btn:hover {
+    background: #9f2200;
+  }
+
+  @media (max-width: 768px) {
+    .hotel-card {
+        flex-direction: column;
+        width: 90%;
+    }
+    
+    .hotel-image {
+        width: 100%;
+    }
+  
+    .price-section {
+        text-align: center;
+    }
+  }
+  
+  .blocks{
+      gap: 20px;
+  }
+  
+
+
+    </style>
+</head>
+<body>
+
+  <section>
+    <!-- Five-Star Hotel -->
+    <div class="hotel-card">
+      <img src="hotel-img/sylhet/pic-1.jpg" alt="Grand Sylhet Hotel & Resort" class="hotel-image">
+      <div class="hotel-info">
+          <h2>Grand Sylhet Hotel & Resort <span class="stars">★★★★★</span></h2>
+          <p class="location">Sylhet • Prime location near tea gardens & Sylhet Airport</p>
+          <p class="room-type"><strong>Luxury Suite</strong> <br> 1 King-size bed</p>
+          <p class="benefits">
+            <span>✔ Breakfast included</span> <br>
+            <span>✔ Free cancellation</span> <br>
+            <span>✔ Spa & Wellness Center</span> <br>
+            <span>✔ Scenic Views</span>
+          </p>
+      </div>
+      <div class="price-section">
+          <p class="price">BDT 20,000</p>
+          <p class="taxes">+BDT 3,000 taxes and charges</p>
+          <button class="availability-btn">See availability</button>
+      </div>
+    </div>
+  
+    <!-- Four-Star Hotel -->
+    <div class="hotel-card">
+      <img src="hotel-img/sylhet/pic-3.jpg" alt="Hotel Noorjahan Grand" class="hotel-image">
+      <div class="hotel-info">
+          <h2>Hotel Noorjahan Grand <span class="stars">★★★★</span></h2>
+          <p class="location">Sylhet • In the heart of the city</p>
+          <p class="room-type"><strong>Deluxe Room</strong> <br> 1 Queen-size bed</p>
+          <p class="benefits">
+            <span>✔ Complimentary Breakfast</span> <br>
+            <span>✔ Free cancellation</span> <br>
+            <span>✔ Rooftop Restaurant</span>
+          </p>
+      </div>
+      <div class="price-section">
+          <p class="price">BDT 14,000</p>
+          <p class="taxes">+BDT 2,200 taxes and charges</p>
+          <button class="availability-btn">See availability</button>
+      </div>
+    </div>
+  
+    <!-- Three-Star Hotel -->
+    <div class="hotel-card">
+      <img src="hotel-img/sylhet/pic-4.jpg" alt="Hotel Mira Garden" class="hotel-image">
+      <div class="hotel-info">
+          <h2>Hotel Mira Garden <span class="stars">★★★</span></h2>
+          <p class="location">Sylhet • 1 km from city center</p>
+          <p class="room-type"><strong>Standard Double Room</strong> <br> 1 double bed</p>
+          <p class="benefits">
+            <span>✔ Breakfast included</span> <br>
+            <span>✔ Free WiFi</span>
+          </p>
+      </div>
+      <div class="price-section">
+          <p class="price">BDT 8,000</p>
+          <p class="taxes">+BDT 1,500 taxes and charges</p>
+          <button class="availability-btn">See availability</button>
+      </div>
+    </div>
+  
+    <!-- Two-Star Hotel -->
+    <div class="hotel-card">
+      <img src="hotel-img/sylhet/pic-5.jpg" alt="Nirvana Inn" class="hotel-image">
+      <div class="hotel-info">
+          <h2>Nirvana Inn <span class="stars">★★</span></h2>
+          <p class="location">Sylhet • 2 km from center</p>
+          <p class="room-type"><strong>Economy Room</strong> <br> 1 twin bed</p>
+          <p class="benefits">
+            <span>✔ Free WiFi</span> <br>
+            <span>✔ Affordable rates</span>
+          </p>
+      </div>
+      <div class="price-section">
+          <p class="price">BDT 5,000</p>
+          <p class="taxes">+BDT 1,000 taxes and charges</p>
+          <button class="availability-btn">See availability</button>
+      </div>
+    </div>
+  
+    <!-- One-Star Hotel -->
+    <div class="hotel-card">
+      <img src="hotel-img/sylhet/pic-2.jpg" alt="Hotel Syl View" class="hotel-image">
+      <div class="hotel-info">
+          <h2>Hotel Syl View <span class="stars">★</span></h2>
+          <p class="location">Sylhet • 3 km from city center</p>
+          <p class="room-type"><strong>Basic Room</strong> <br> 1 single bed</p>
+          <p class="benefits">
+            <span>✔ Budget-friendly</span> <br>
+            <span>✔ Free parking</span>
+          </p>
+      </div>
+      <div class="price-section">
+          <p class="price">BDT 3,000</p>
+          <p class="taxes">+BDT 500 taxes and charges</p>
+          <button class="availability-btn">See availability</button>
+      </div>
+    </div>
+  
+  </section>
+
+
+
+  <script>
+    let elements = document.getElementsByClassName('availability-btn');
+  
+  for (let i = 0; i < elements.length; i++) {
+    elements[i].addEventListener('click', function() {
+      window.location.href = "booking_info.html";
+    });
+  }
+  
+  </script>
+  
+  </body>
+</html>

@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Booking Card</title>
+    <link rel="stylesheet" href="trial.css">
+    <style>
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(212, 210, 210);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+
+  .hotel-card {
+    display: flex;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.297);
+    width: 700px;
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .hotel-card:hover{
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.699);
+  }
+  
+
+  .hotel-image {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .hotel-info {
+    flex-grow: 1;
+    padding: 10px 15px;
+  }
+  
+  .hotel-info h2 {
+    margin: 0;
+    font-size: 18px;
+    color: #FF5400;
+  }
+  
+  .stars {
+    color: gold;
+  }
+  
+  .location {
+    color: #666;
+    font-size: 14px;
+  }
+  
+  .feature {
+    font-size: 14px;
+    color: #008009;
+    margin: 5px 0;
+  }
+  
+  .room-type {
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .benefits {
+    font-size: 13px;
+    color: #007600;
+    margin-top: 5px;
+  }
+  
+  .price-section {
+    text-align: right;
+    padding: 10px;
+  }
+  
+  .review-score {
+    background: #003580;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 14px;
+  }
+  
+  .review-score span {
+    font-size: 12px;
+    color: #333;
+    margin-left: 5px;
+  }
+  
+  .price {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 5px 0;
+  }
+  
+  .taxes {
+    font-size: 12px;
+    color: #777;
+  }
+  
+  .availability-btn {
+    background: #FF5400;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .availability-btn:hover {
+    background: #9f2200;
+  }
+
+  @media (max-width: 768px) {
+    .hotel-card {
+        flex-direction: column;
+        width: 90%;
+    }
+    
+    .hotel-image {
+        width: 100%;
+    }
+  
+    .price-section {
+        text-align: center;
+    }
+  }
+  
+  .blocks{
+      gap: 20px;
+  }
+  
+
+
+    </style>
+</head>
+<body>
+
+  <section>
+    <!-- Five-Star Luxury Resort -->
+    <div class="hotel-card">
+      <img src="hotel-img/bandorban/pic-4.jpg" alt="Boga Lake Hill Resort" class="hotel-image">
+      <div class="hotel-info">
+          <h2>Boga Lake Hill Resort <span class="stars">★★★★★</span></h2>
+          <p class="location">Bandarban • Near Boga Lake</p>
+          <p class="room-type"><strong>Lake View Cottage</strong> <br> 1 King-size bed</p>
+          <p class="benefits">
+            <span>✔ Stunning lake & hill views</span> <br>
+            <span>✔ Private balcony</span> <br>
+            <span>✔ Complimentary breakfast</span> <br>
+            <span>✔ Adventure trekking access</span>
+          </p>
+      </div>
+      <div class="price-section">
+          <p class="price">BDT 22,500</p>
+          <p class="taxes">+BDT 3,500 taxes and charges</p>
+          <button class="availability-btn">See availability</button>
+      </div>
+    </div>
+  
+    <!-- Four-Star Mountain Lodge -->
+    <div class="hotel-card">
+      <img src="hotel-img/bandorban/pic-5.jpg" alt="Nafakhum Valley Resort" class="hotel-image">
+      <div class="hotel-info">
+          <h2>Nafakhum Valley Resort <span class="stars">★★★★</span></h2>
+          <p class="location">Bandarban • Near Nafakhum Waterfall</p>
+          <p class="room-type"><strong>Deluxe Room</strong> <br> 1 Queen-size bed</p>
+          <p class="benefits">
+            <span>✔ Complimentary breakfast</span> <br>
+            <span>✔ Free cancellation</span> <br>
+            <span>✔ Waterfall & forest view</span> <br>
+            <span>✔ Local trekking guides</span>
+          </p>
+      </div>
+      <div class="price-section">
+          <p class="price">BDT 18,000</p>
+          <p class="taxes">+BDT 2,800 taxes and charges</p>
+          <button class="availability-btn">See availability</button>
+      </div>
+    </div>
+  
+    <!-- Three-Star Riverside Lodge -->
+    <div class="hotel-card">
+      <img src="hotel-img/bandorban/pic-2.jpg" alt="Sangu Riverside Lodge" class="hotel-image">
+      <div class="hotel-info">
+          <h2>Sangu Riverside Lodge <span class="stars">★★★</span></h2>
+          <p class="location">Bandarban • Near Sangu River</p>
+          <p class="room-type"><strong>Standard Double Room</strong> <br> 1 double bed</p>
+          <p class="benefits">
+            <span>✔ Breakfast included</span> <br>
+            <span>✔ Free WiFi</span> <br>
+            <span>✔ River view & boat rides</span>
+          </p>
+      </div>
+      <div class="price-section">
+          <p class="price">BDT 9,500</p>
+          <p class="taxes">+BDT 1,600 taxes and charges</p>
+          <button class="availability-btn">See availability</button>
+      </div>
+    </div>
+  
+    <!-- Two-Star Budget Stay -->
+    <div class="hotel-card">
+      <img src="hotel-img/bandorban/pic-1.jpg" alt="Thanchi Budget Lodge" class="hotel-image">
+      <div class="hotel-info">
+          <h2>Thanchi Budget Lodge <span class="stars">★★</span></h2>
+          <p class="location">Bandarban • Near Thanchi Bridge</p>
+          <p class="room-type"><strong>Economy Room</strong> <br> 1 twin bed</p>
+          <p class="benefits">
+            <span>✔ Free WiFi</span> <br>
+            <span>✔ Budget-friendly</span> <br>
+            <span>✔ Local tour guide available</span>
+          </p>
+      </div>
+      <div class="price-section">
+          <p class="price">BDT 5,500</p>
+          <p class="taxes">+BDT 1,000 taxes and charges</p>
+          <button class="availability-btn">See availability</button>
+      </div>
+    </div>
+  
+    <!-- One-Star Camping Spot -->
+    <div class="hotel-card">
+      <img src="hotel-img/bandorban/pic-3.jpg" alt="Bandarban Hill Camping" class="hotel-image">
+      <div class="hotel-info">
+          <h2>Bandarban Hill Camping <span class="stars">★</span></h2>
+          <p class="location">Bandarban • Near Keokradong Peak</p>
+          <p class="room-type"><strong>Basic Tent</strong> <br> Shared camping area</p>
+          <p class="benefits">
+            <span>✔ Affordable camping</span> <br>
+            <span>✔ Campfire & BBQ</span> <br>
+            <span>✔ Mountain trekking</span>
+          </p>
+      </div>
+      <div class="price-section">
+          <p class="price">BDT 2,800</p>
+          <p class="taxes">+BDT 500 taxes and charges</p>
+          <button class="availability-btn">See availability</button>
+      </div>
+    </div>
+  
+  </section>
+
+
+  <script>
+    let elements = document.getElementsByClassName('availability-btn');
+  
+  for (let i = 0; i < elements.length; i++) {
+    elements[i].addEventListener('click', function() {
+      window.location.href = "booking_info.html";
+    });
+  }
+  
+  </script>
+  
+  </body>
+</html>

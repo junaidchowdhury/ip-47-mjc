@@ -1,0 +1,156 @@
+
+
+ <!-- filepath: /c:/xampp/htdocs/TRAVEL_WEB/contact.php -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact the Author</title>
+  <style>
+       /* General Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #FF5400;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.main-content {
+  padding: 20px;
+}
+
+.contact-section {
+  max-width: 600px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.contact-section h2 {
+  color: #FF5400;
+  margin-bottom: 10px;
+}
+
+.contact-section p {
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.contact-form {
+  background: white;
+  border: 1px solid #FF5400;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 15px;
+  text-align: left;
+  margin-right: 20px;
+
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #FF5400;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #FF5400;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #FF5400;
+}
+
+.btn-submit {
+  background-color: #FF5400;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn-submit:hover {
+  background-color: #e04a00;
+}
+
+.footer {
+  background-color: #FF5400;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  position: relative;
+}
+
+.footer p {
+  margin: 0;
+}
+
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="logo">
+      <h1>Drop your review</h1>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <section class="contact-section">
+      <h2>We'd Love to Hear From You!</h2>
+      <p>If you have any questions, feedback, or collaboration ideas, feel free to get in touch using the form below.</p>
+    
+      <form class="contact-form" method="POST" action="">
+        <div class="form-group">
+          <label for="name">Your Name</label>
+          <input type="text" id="name">
+        </div>
+        <div class="form-group">
+          <label for="email">Your Email</label>
+          <input type="email" id="email" >
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Write your message" required></textarea>
+        </div>
+        <button type="submit" class="btn-submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2025 Author's Name. All Rights Reserved.</p>
+  </footer>
+
+
+</body>
+</html>

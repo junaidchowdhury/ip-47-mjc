@@ -1,0 +1,1784 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PillGrim</title>
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        
+
+
+
+
+
+ .profile-icon{
+    color: #FF5400;
+    font-size: 30px;
+}
+
+img{
+    height: 100%;
+    width: 100%;
+}
+.img{
+    height: 48px;
+    width: 56px;
+}
+
+.hero{
+  font-size: 36px;
+  display: flex;
+  font-weight: 700;
+
+}
+
+.h{
+    color: #131318;
+   
+}
+.t{
+    color: #FF5400
+}
+.c{
+    font-size: 25px;
+    font-weight: 700;
+    color: #FF5400;
+}
+
+
+ul a{
+    margin-left: 25px;
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+ 
+.right-nav{
+    display: flex;
+    gap: 10px;
+    margin-top: 5px;
+}
+
+
+.parent-nav{
+    width: 1170px;
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+    
+}
+
+.main-nav{
+
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+    
+}
+.navber{
+
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    width: 1170px;
+}
+
+
+
+
+/* -----------------------------Responsive Design---------------------------- */
+
+
+
+/* Responsive nav for small devices (no hamburger menu) */
+@media (max-width: 900px) {
+    .parent-nav, .navber {
+        width: 100vw !important;
+        min-width: unset;
+        padding: 0 5vw;
+    }
+    .navber {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        width: 100vw !important;
+        padding: 10px 0;
+    }
+    .right-nav {
+        margin-bottom: 10px;
+        justify-content: center;
+        width: 100%;
+    }
+    .left-nav {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .ln {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    .ln a {
+        margin: 10px 0 0 0;
+        font-size: 20px;
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+        border-bottom: 1px solid #eee;
+        color: #131318;
+    }
+    .img {
+        height: 36px;
+        width: 42px;
+    }
+    .hero {
+        font-size: 24px;
+    }
+    .c {
+        font-size: 18px;
+    }
+    .profile-icon {
+        font-size: 22px;
+    }
+}
+@media (max-width: 600px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .parent-nav, .navber {
+        padding: 0 2vw;
+    }
+    .ln a {
+        font-size: 16px;
+        padding: 8px 0;
+    }
+    .img {
+        height: 28px;
+        width: 32px;
+    }
+    .hero {
+        font-size: 18px;
+    }
+}
+
+
+
+/* --------------------- section 02-------------------- */
+
+
+
+.bg{
+    height:500px;
+    width: 1170px;
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.1)), url(Images/Group\ 13\ \(1\)\ \(1\).png);
+    border-radius: 10px;
+    display:flex;
+    justify-content: center;
+    align-items: center; 
+    
+
+    
+}
+
+
+
+
+.qq{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.explore{
+    color: white;
+    font-size: 64px;
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.a{
+    margin-top: 40px;
+    color: white; 
+    text-align: center;
+}
+
+.b{
+    margin-left: 40px;
+    margin-top: 40px;
+    height: 84px;
+    width: 800px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    
+}
+
+
+.f{
+    height: 52px;
+    width: 174px;
+    background-color: rgba(255, 255, 255, 0.879);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #131318a0;
+    border: none;
+
+}
+.d{
+    height: 52px;
+    width: 174px;
+    background-color:#FF5400;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    gap: 7px;
+
+
+}
+
+
+/* Responsive Section 2 */
+@media (max-width: 900px) {
+    .bg {
+        width: 98vw;
+        height: auto;
+        flex-direction: column;
+        padding: 20px 0;
+    }
+    .explore {
+        font-size: 36px;
+        text-align: center;
+    }
+    .a {
+        font-size: 16px;
+        margin-top: 20px;
+    }
+    .b {
+        width: 70vw;
+        min-width: unset;
+        margin: 20px auto 0 auto;
+        height: auto;
+        flex-direction: column;
+        gap: 15px;
+        align-items: stretch;
+        padding: 15px 0;
+        display: flex;
+        justify-content: center;    
+        align-items: center;
+    }
+    .f, .d {
+        width: 60%;
+        min-width: unset;
+        margin: 0;
+    }
+    .d {
+        justify-content: center;
+    }
+    .find {
+        font-size: 16px;
+    }
+}
+@media (max-width: 600px) {
+     body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .bg {
+        width: 100%;
+        border-radius: 10px;
+        padding: 10px 0;
+    }
+    .b {
+        width: 70vw;
+        padding: 10px 0;
+    }
+    .explore {
+        font-size: 22px;
+    }
+    .a {
+        font-size: 14px;
+    }
+}
+
+
+
+/* -------------------------------section 03----------------------- */
+
+
+.sec3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 85px;
+    margin-top: 40px;
+}
+
+.g{
+    height: 550px;
+    width: 540px;
+    
+   
+
+
+
+}
+
+.imm{
+    height: 550px;
+    width: 540px; 
+    border-radius: 15px;
+
+}
+
+
+.opt{
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.do{
+    margin-top: 40px;
+    color: rgba(0, 0, 0, 0.603);
+}
+
+li{
+    margin-top: 50px;
+    color: rgba(0, 0, 0, 0.603);
+    
+}
+
+
+
+/* Responsive Section 3 */
+@media (max-width: 900px) {
+    .sec3 {
+        flex-direction: column;
+        gap: 30px;
+        margin-top: 30px;
+    }
+    .g, .imm {
+        width: 95vw;
+        max-width: 500px;
+        height: auto;
+        margin: 0 auto;
+    }
+    .imm img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+    .opt {
+        font-size: 28px;
+        text-align: center;
+    }
+    .do, .g li {
+        font-size: 16px;
+        margin-top: 20px;
+    }
+}
+@media (max-width: 600px) {
+     body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .sec3 {
+        gap: 18px;
+        margin-top: 18px;
+    }
+    .g, .imm {
+        width: 90vw;
+        max-width: 98vw;
+        padding: 0 2vw;
+    }
+    .opt {
+        font-size: 20px;
+    }
+    .do, .g li {
+        font-size: 14px;
+        margin-top: 12px;
+    }
+}
+
+
+/* .bu{
+    width: 174px;
+    height: 52px;
+    background-color: #FF5400;
+    color: white;
+    border-radius: 8px;
+    margin-top: 45px;
+    font-size: 20px;
+
+
+} */
+
+
+
+
+/* --------------------------sec 04------------------------ */
+
+
+.aa{
+    width: 643px;
+    height: 126px;
+   
+
+}
+.bb{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+.cc{
+    font-size: 40px;
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.dd{
+    color: rgba(0, 0, 0, 0.603);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+
+}
+
+
+.pics{
+    width: 1170px;
+    height: 935px;
+   
+}
+
+
+.mul-pic{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.pic1{
+       width: 573px;
+       height: 300px;
+       background-image: url(web_image/cox.jpg);
+       color: white;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       font-size: 28px;
+       font-weight: 800;
+       background-size: cover;
+       
+}
+
+.pic2{
+    width: 573px;
+    height: 300px;
+    background-image: url(web_image/ahsan.jpg);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    font-weight: 800;
+    background-size: cover;
+}
+
+
+.line1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   gap: 24px;
+}
+
+.pic3{
+    height: 286px;
+    width: 374px;
+    background-image: url(web_image/bandarban.jpg);
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    font-weight: 800;
+    background-size: cover;
+}
+
+.pic4{
+    height:286px;
+    width: 474px;
+    background-image: url(web_image/sajek.jpg);
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    font-weight: 800;
+    background-size: cover;
+
+}
+
+
+.pic5{
+    height:286px;
+    width:274px;
+    background-image: url(web_image/sundarban.jpg);
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    font-weight: 800;
+    background-size: cover;
+}
+
+.line2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    margin-top: 24px;
+}
+
+.pic6{
+    height: 300px;
+    width:473px ;
+    background-image: url(web_image/saint\ martin.jpg);
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    font-weight: 800;
+    background-size: cover;
+}
+
+.pic7{
+    height: 300px;
+    width:673px ;
+    background-image: url(web_image/sylhet.jpg);
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    font-weight: 800;
+    background-size: cover;
+}
+
+.line3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    margin-top: 24px;
+}
+
+
+.why{
+    height: 126px;
+    width: 643px;
+    margin-top: 40px;
+
+}
+
+.wcu{
+    font-size: 40px;
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dol{
+    color: rgba(0, 0, 0, 0.603);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.az{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pic-hover:hover{
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.929);
+    
+    /* margin-top: 5px;
+    margin-left: 5px; */
+
+
+}
+
+.pic-hover{
+    transition: 0.5s;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+
+
+/* -------------------------------section 5----------------------- */
+
+
+.box1{
+    width: 573px;
+    height: 283px;
+    border: 1px solid #FBB563;
+    border-radius: 10px;
+    background-color:#fbb4631e ;
+}
+
+.box2{
+    width: 573px;
+    height: 283px;
+    border: 1px solid #29CEF6;
+    border-radius: 10px;
+    background-color: #29cdf61f;
+}
+
+.box3{
+    width: 573px;
+    height: 283px;
+    border: 1px solid #E94444;
+    border-radius: 10px;
+    background-color: #e9444418;
+}
+
+.line01{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+
+}
+
+.line02{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 24px;
+}
+
+.ho{
+   font-size: 60px;
+   margin-top: 20px;
+   margin-left: 20px;
+}
+
+.glo{
+    font-size: 60px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.mo{
+    font-size: 60px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.wr{
+    font-size: 24px;
+    font-weight: 800;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+.pa{
+     color: rgba(0, 0, 0, 0.603);
+     margin-left: 20px;
+     margin-top: 15px;
+}
+
+.cu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+
+/* Responsive Section 4 (Choose Your Destination & Images) */
+@media (max-width: 900px) {
+    .bb {
+        margin-top: 24px;
+    }
+    .aa {
+        width: 95vw;
+        height: auto;
+        padding: 0 2vw;
+    }
+    .cc {
+        font-size: 28px;
+        text-align: center;
+    }
+    .dd {
+        font-size: 15px;
+        text-align: center;
+        margin-top: 8px;
+        padding: 0 2vw;
+    }
+    .pics {
+        width: 98vw;
+        height: auto;
+        padding: 0 1vw;
+    }
+    .line1, .line2, .line3 {
+        flex-direction: column;
+        gap: 16px;
+        margin-top: 16px;
+        align-items: center;
+    }
+    .pic1, .pic2, .pic3, .pic4, .pic5, .pic6, .pic7 {
+        width: 95vw !important;
+        max-width: 400px;
+        height: 180px !important;
+        font-size: 18px;
+        border-radius: 10px;
+    }
+}
+@media (max-width: 600px) {
+    .aa {
+        width: 100vw;
+        padding: 0 1vw;
+    }
+    .cc {
+        font-size: 20px;
+    }
+    .dd {
+        font-size: 13px;
+        padding: 0 1vw;
+    }
+    .pics {
+    
+        width: 100vw;
+        padding: 0;
+    }
+    .pic1, .pic2, .pic3, .pic4, .pic5, .pic6, .pic7 {
+        width: 80vw !important;
+        max-width: 80vw;
+        height: 200px !important;
+        font-size: 14px;
+    }
+}
+
+
+.sec5{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.b-box1{
+
+    width: 1170px;
+    height: 500px;
+    background-image:url("Images/Group 39.png");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.in-box1{
+    width: 579px;
+    height: 389px;
+    background-color: rgba(255, 255, 255, 0.527);
+    margin-left: 550px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.insec{
+    height:289px ;
+    width: 452px;
+    
+    
+}
+
+.info{
+    display: flex;
+    gap: 30px;
+}
+
+
+.info p i{
+    color: #FF5400;
+    font-size: 24px;
+}
+
+.tts{
+    font-size: 24px;
+    font-weight: 800;
+    margin-top: 12px;
+}
+
+.pri{
+    font-size: 20px;
+    font-weight: 800;
+    margin-top: 12px;
+    color: #FF5400;
+}
+
+.buuu{
+    height: 52px;
+    width: 150px;
+    background-color: #FF5400;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    margin-top: 20px;
+}
+
+
+.in-box2{
+    width: 579px;
+    height: 389px;
+    background-color: rgba(233, 22, 22, 0.86);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 550px;
+ 
+}
+
+
+.insec2{
+    height:289px ;
+    width: 452px;
+}
+
+.b-box2{
+    width: 1170px;
+    height: 500px;
+    background-image:url("Images/Group 40.png");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.foot1{
+    height: 500px;
+    width: 1170px;
+    background-color:rgb(212, 210, 210); 
+    border-radius: 10px;
+    
+    
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.foot01{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 200px;
+    margin-top: 150px;
+}
+.foot-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.eline{
+    border-top: .2px solid rgb(102, 99, 99);
+    width: 800px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+}
+
+.eeline{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#where{
+    
+    height: 100%;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.d a{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
+        .review-container {
+            width: 1130px;
+            margin: 50px auto;
+            background: rgb(242, 232, 221);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .review-container h2 {
+            color: #E94444;
+        }
+        .reviews {
+            margin-top: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+        .review {
+            background: white;
+            padding: 15px;
+            width: 90%;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+        .review strong {
+            color: #E94444;
+        }
+        .stars {
+            color: #FFD700;
+            margin-top: 5px;
+        }
+
+        .find{
+            font-weight: 700;
+            color: white;
+            font-size: 15px;
+        }
+/* --------------------------------Responsive section 5 -------------- */
+
+
+        /* Responsive Section 5 (Why Choose Us) */
+@media (max-width: 900px) {
+    .az, .why {
+        width: 100vw;
+        min-width: unset;
+        padding: 0 2vw;
+        margin-top: 24px;
+    }
+    .why, .wcu, .dol {
+        text-align: center;
+        width: 100%;
+    }
+    .line01, .line02 {
+        flex-direction: column;
+        gap: 18px;
+        align-items: center;
+        margin-top: 18px;
+    }
+    .box1, .box2, .box3 {
+        width: 90vw;
+        min-width: unset;
+        height: auto;
+        margin: 0 auto;
+        padding: 18px 0;
+        font-size: 16px;
+    }
+    .wr {
+        font-size: 20px;
+        margin-left: 0;
+        text-align: center;
+    }
+    .pa {
+        margin-left: 0;
+        margin-top: 10px;
+        font-size: 15px;
+        text-align: center;
+    }
+    .ho, .glo, .mo {
+        font-size: 38px;
+        margin: 10px auto 0 auto;
+        display: flex;
+        justify-content: center;
+    }
+}
+@media (max-width: 600px) {
+    .az, .why {
+        padding: 0 1vw;
+    }
+    .box1, .box2, .box3 {
+        width: 85vw;
+        font-size: 14px;
+        padding: 10px 0;
+    }
+    .wr {
+        font-size: 16px;
+    }
+    .pa {
+        font-size: 13px;
+    }
+    .ho, .glo, .mo {
+        font-size: 28px;
+    }
+}
+
+
+
+/* Responsive Section 6 (Deals & Discounts) */
+@media (max-width: 900px) {
+    .cu {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 24px;
+        width: 100vw;
+        padding: 0 2vw;
+    }
+    .fu, .wcu, .dol {
+        width: 100%;
+        text-align: center;
+        font-size: 16px;
+    }
+    .sec5 {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 24px;
+    }
+    .b-box1, .b-box2 {
+        width: 95vw;
+        height: auto;
+        min-height: 350px;
+        margin: 0 auto 24px auto;
+        background-size: cover;
+        border-radius: 10px;
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .in-box1, .in-box2 {
+        width: 55vw;
+        min-width: unset;
+        height: auto;
+        margin: 0;
+        padding: 20px 0;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .insec, .insec2 {
+        width: 90vw;
+        min-width: unset;
+        height: auto;
+        padding: 0 2vw;
+    }
+    .info {
+        flex-direction: row;
+        gap: 10px;
+        align-items: flex-start;
+        
+    }
+    .info p i{
+    color: #FF5400;
+    font-size: 16px;
+}
+
+    .info p {
+        font-size: 14px;
+    }
+    .tts {
+        font-size: 16px;
+        margin-top: 10px;
+    }
+    .pri {
+        font-size: 14px;
+        margin-top: 10px;
+    }
+    .buuu {
+        width: 100%;
+        margin-top: 16px;
+        font-size: 14px;
+        height: 44px;
+    }
+}
+@media (max-width: 600px) {
+    .cu {
+        padding: 0 1vw;
+    }
+    .fu, .wcu, .dol {
+        font-size: 16px;
+    }
+    .b-box1, .b-box2 {
+        width: 85vw;
+        min-width: unset;
+        padding: 0;
+    }
+    .in-box1, .in-box2 {
+        width: 70vw;
+        height: 40vw;
+        padding: 10px 0;
+        background-color: rgba(231, 230, 230, 0.53);
+    }
+    .insec, .insec2 {
+        width: 96vw;
+        padding: 0 1vw;
+    }
+    .tts {
+        font-size: 16px;
+    }
+    .pri {
+        font-size: 14px;
+    }
+    .buuu {
+        font-size: 14px;
+        height: 38px;
+    }
+
+
+}
+
+
+/* Responsive Review Section */
+@media (max-width: 900px) {
+    .review-container {
+        width: 90vw;
+        /* margin: 30px auto;
+        padding: 12px; */
+    }
+    .reviews {
+        width: 97%;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .review {
+        width: 100%;
+        font-size: 16px;
+        padding: 10px;
+    }
+}
+@media (max-width: 600px) {
+    .review-container {
+        width: 85vw;
+        padding: 6px;
+        border-radius: 6px;
+    }
+    .review {
+        font-size: 14px;
+        padding: 7px;
+    }
+    .review-container h2 {
+        font-size: 20px;
+    }
+}
+
+
+/* Responsive Footer */
+@media (max-width: 900px) {
+    .foot1 {
+        width: 100%;
+        min-width: unset;
+        height: auto;
+        padding: 20px 2vw;
+        border-radius: 10px;
+        margin: 0 auto;
+    }
+    .foot01 {
+        flex-direction: column;
+        align-items: center;
+        margin-right: 0;
+        margin-top: 40px;
+    }
+    .right-nav {
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+    .dol {
+        font-size: 15px;
+        text-align: center;
+        margin: 18px 0;
+    }
+    .foot-icon {
+        gap: 14px;
+        margin: 10px 0;
+    }
+    .eline {
+        width: 90vw;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .eeline {
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .foot1 {
+        width: 100vw;
+        padding: 10px 1vw;
+        border-radius: 0;
+    }
+    .foot01 {
+        margin-top: 20px;
+    }
+    .dol {
+        font-size: 13px;
+        margin: 10px 0;
+    }
+    .foot-icon {
+        gap: 10px;
+        font-size: 18px;
+    }
+    .eline {
+        width: 98vw;
+        margin-top: 18px;
+        margin-bottom: 18px;
+    }
+    .eeline > div {
+        font-size: 13px;
+    }
+}
+
+
+    </style>
+</head>
+<body>
+    
+
+
+<!-- ----------------------------section 01----------------------- -->
+<section class="main-nav">   
+    
+    <div class="parent-nav">
+        <div class="navber">
+
+            <div class="right-nav">
+                <div class="img">
+                    <img src="Images/Group 40071 (2).png" alt="">
+                </div>
+                <div class="hero">
+                    <div class="h">
+                        Pill
+                    </div>
+                    <div class="t">
+                        Grim
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="left-nav">
+
+                <ul class="ln">
+                       <a class="c"> Home</a>
+                       <a href="#cu">Packeges</a>
+                       <a href="#Destination">Destination</a>
+                       <a id="contactLink"> Review</a>
+                       <a class="c" id="profile-icon" > Profile</a>
+                       <a href="" class="profile-icon" id="profile-icon1" ><i  class="fa-solid fa-user"></i></a>
+                       
+
+
+                </ul>
+    
+            </div>
+
+        </div>
+    </div>
+
+    </section>
+
+
+
+
+<!-- ---------------------------section 02--------------------------- -->
+
+    <section class="qq">
+
+
+
+    
+            <div class="bg">
+    
+
+                <div>
+
+
+                    <div class="explore">
+                       Your Journey Your Purpose
+                    </div>
+
+
+                    <div class="a">
+                    Explore breathtaking locations across the globe, from serene beaches to bustling cityscapes.
+                    </div>
+
+
+                    <div class="b">
+
+                        <div class="f">
+                            <select id="where" name="where">
+                              <option value="">Where</option>  
+                              <option value="">Cox's Bazar</option>
+                              <option value="">Sajek</option>
+                              <option value="">Sundarban</option>
+                              <option value="">Saint Martin</option>
+                              <option value="">Sylhet</option>
+                              <option value="">Ahsan Manjil</option>
+                              <option value="">Bandarban</option>
+                            </select>
+                            
+                        </div>
+
+                        <input type="date" class="f">
+
+                        <div class="f">
+                             <select id="where" name="colors">
+                                <option value=""> Select type</option>  
+                                <option value="">Single</option>
+                                <option value="">Group</option>
+                                <option value="">Couple</option>
+                              </select>
+
+                        </div>
+
+                        <button class="d">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                             <a href="#Destination" class="find">Find Now</a>
+                        </button>
+                       
+                    </div>
+
+                                                                           
+
+                </div>
+
+
+            </div>
+
+
+    </section>
+
+
+
+<!-- ---------------------------section 03--------------------------- -->
+
+
+
+<section class="sec3">
+
+
+
+    <div class="g">
+       <div class="opt">
+        Our Popular Tours
+       </div>
+
+
+       <div>
+          <p class="do">Tailored Itineraries – Enjoy customized travel plans that suit your preferences and budget.
+          </p>
+               <li>Comfort & Safety – Travel with peace of mind, knowing we prioritize your safety and convenience.</li>
+               <li>Expert Guides – Explore destinations with experienced and knowledgeable local guides.</li>
+               <li> 24/7 Support – Get round-the-clock assistance to ensure a smooth and hassle-free journey.</li>
+               <li>Affordable Packages – Experience top-quality tours at competitive prices with no hidden costs.</li>
+               <!-- <button class="bu">Read More</button> -->
+               
+       </div>
+       <div></div>
+    </div>
+
+
+    <div class="imm">
+       <img src="Images/Rectangle 4.png" alt="">
+    </div>
+
+
+
+
+</section>
+
+
+
+<!-- ---------------------------section 04--------------------------- -->
+
+<div class="bb" id="Destination">
+
+
+    <div class="aa">
+        <div class="cc">
+            Choose Your Destination
+        </div>
+        <div class="dd">
+        Discover stunning beaches, vibrant cities, breathtaking landscapes. Whether you seek adventure, relaxation, or culture, we offer the best destinations tailored to your travel dreams and budget!
+        </div>
+    </div>
+    
+
+
+</div>
+
+
+<section class="mul-pic">
+
+
+
+ <div class="pics">
+
+
+    <div class="line1">
+
+           <div class="pic1 pic-hover" id="maldives">
+
+            Cox's Bazar
+
+           </div>
+
+           <div class="pic2 pic-hover" id="ahsan">
+
+            Ahasan Manzil
+
+           </div>
+
+    </div>
+
+    <div class="line2">
+
+         <div class="pic3 pic-hover" id="bandarban">Bandarban</div>
+         <div class="pic4 pic-hover" id="sajek">Sajek</div>
+         <div class="pic5 pic-hover" id="sundarban">Sundarban</div>
+
+    </div>
+
+    <div class="line3"> 
+
+      <div class="pic6 pic-hover" id="saint">Saint Martin</div>
+      <div class="pic7 pic-hover" id="sylhet">Sylhet</div>
+
+    </div>
+
+ </div>
+
+
+
+
+</section>
+
+
+<!-- ---------------------------section 05--------------------------- -->
+
+<div class="az">
+    <div class="why">
+        <div class="wcu">
+            Why Choose Us
+        </div>
+        <div class="dol">
+        Handpicked Hotels  |  World Class Service  |  Best Price Guarantee
+        </div>
+    </div>
+</div>
+
+
+
+<section>
+
+
+     <div class="line01">
+      
+         <div class="box1">
+              <div class="ho"><i class="fa-solid fa-hotel"></i></div>
+              <div class="wr">Handpicked Hotels</div>
+              <div class="pa">We carefully select top-rated hotels for comfort, luxury, and convenience. Enjoy premium amenities, excellent service, and ideal locations—whether beachfront resorts or budget stays, we ensure the best experience!</div>
+         </div>
+         <div class="box2">
+               <div class="glo"><i class="fa-solid fa-globe"></i></div>
+               <div class="wr">World Class Service</div>
+               <div class="pa">Enjoy seamless travel with expert guidance, 24/7 support, and premium hospitality. From personalized itineraries to hassle-free bookings, we ensure comfort, safety, and unforgettable experiences at every step of your adventure! </div>
+         </div>
+
+
+
+     </div>
+
+            
+
+     <div class="line02">
+
+          <div class="box3">
+               <div class="mo"><i class="fa-regular fa-money-bill-1"></i></div>
+               <div class="wr">Best Price Guarantee</div>
+               <div class="pa">We offer the lowest prices on flights, hotels, and tour packages. No hidden fees—just unbeatable deals for every budget. Find a lower price? We’ll match it! </div>
+          </div>
+
+     </div>
+
+
+
+</section>
+
+<!-- ---------------------------section 06--------------------------- -->
+<div class="cu" id="cu">
+    <div class="fu">
+        <div class="wcu">
+            Deals & Discounts
+        </div>
+    
+    
+    
+        <div class="dol">
+        Unlock amazing savings on travel packages, hotels, and tours with our special offers tailored just for you!
+        </div>
+    </div>
+</div>
+
+
+<section class="sec5">
+
+
+    <div class="b-box1">
+
+
+       <div class="in-box1">
+          
+
+          <div class="insec">
+              <div class="info">
+                <p>
+                    <i class="fa-regular fa-clock"></i>
+                    7 Day / 6 Night
+                </p>
+                <p>
+                    <i class="fa-solid fa-users"></i>
+                     Max : 4
+                </p>
+                <p>
+                    <i class="fa-solid fa-location-dot"></i>
+                    Saint Martin
+                </p>
+              </div>
+              <div class="tts">Tour To Saint Martin</div>
+              <!-- <div class="dol">Amet consectetur. Vulputate commodo felis 
+                molestie risus  ornare nulla amet et. Libero commodo sagittis dignissim adipiscing quis. Habitant adipiscing.</div> -->
+              <div class="pri">Price: 13000-15000</div>
+              <button class="buuu" id="saintt">Book Now</button>
+          </div>
+
+
+       </div>
+
+    </div>
+
+</section>
+
+
+
+<section class="sec5">
+
+
+    <div class="b-box2">
+
+
+       <div class="in-box1">
+          
+
+          <div class="insec2">
+              <div class="info">
+                <p>
+                    <i class="fa-regular fa-clock"></i>
+                    7 Day / 6 Night
+                </p>
+                <p>
+                    <i class="fa-solid fa-users"></i>
+                     Max : 6
+                </p>
+                <p>
+                    <i class="fa-solid fa-location-dot"></i>
+                    Cox's Bazar
+                </p>
+              </div>
+              <div class="tts">Tour To Cox's Bazar</div>
+              <!-- <div class="dol">Amet consectetur. Vulputate commodo felis 
+                molestie risus  ornare nulla amet et. Libero commodo sagittis dignissim adipiscing quis. Habitant adipiscing.</div> -->
+              <div class="pri">Price: 6000-10000</div>
+              <button class="buuu" id="coxx">Book Now</button>
+          </div>
+
+
+       </div>
+
+
+    </div>
+
+</section>
+
+
+
+
+<section class="sec5">
+
+
+    <div class="b-box1">
+
+
+       <div class="in-box1">
+          
+
+          <div class="insec">
+              <div class="info">
+                <p>
+                    <i class="fa-regular fa-clock"></i>
+                    7 Day / 6 Night
+                </p>
+                <p>
+                    <i class="fa-solid fa-users"></i>
+                     Max : 4
+                </p>
+                <p>
+                    <i class="fa-solid fa-location-dot"></i>
+                    Sylhet
+                </p>
+              </div>
+              <div class="tts">Tour To Sylhet</div>
+              <!-- <div class="dol">Amet consectetur. Vulputate commodo felis 
+                molestie risus  ornare nulla amet et. Libero commodo sagittis dignissim adipiscing quis. Habitant adipiscing.</div> -->
+              <div class="pri">Price: 9000-12000</div>
+              <button class="buuu" id="sylhett">Book Now</button>
+          </div>
+
+
+       </div>
+
+
+    </div>
+
+</section>
+
+
+
+
+
+
+
+
+<!-- ----------------------------Review Section---------------------------- -->
+
+<section>
+        <div class="review-container">
+            <h2>Traveler Reviews</h2>
+            <div class="reviews" id="reviewsContainer">
+               
+            </div>
+        </div>
+    </section>
+
+
+
+
+<!-- ----------------------------Foooter Section---------------------------- -->
+
+
+<footer>
+
+
+   <div class="foot1">
+         <div class="foot01">
+             <div class="right-nav">
+                <div class="img">
+                    <img src="Images/Group 40071 (2).png" alt="">
+                </div>
+                <div class="hero">
+                    <div class="h">
+                        Pill
+                    </div>
+                    <div class="t">
+                        Grim
+                    </div>
+                </div>
+            </div>
+         </div>
+
+
+         <div class="dol">Lorem ipsum dolor sit amet consectetur. Nulla sit viverra morbi vitae blandit orci potenti vulputate. Leo erat maecenas vitae elementum ultricies nullam. </div>
+         <div class="foot-icon">
+            <p><i class="fa-brands fa-facebook"></i></p>
+            <p><i class="fa-brands fa-instagram"></i></p>
+            <p><i class="fa-brands fa-x-twitter"></i></p>
+            <p><i class="fa-brands fa-github"></i></p>
+         </div>
+          <div class="eeline">
+            <div class="eline">
+
+            </div>
+          </div>
+         <div class="eeline" >
+
+           <div> 2025, All Rights Reserved.</div>
+
+         </div>
+   </div>
+
+
+
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

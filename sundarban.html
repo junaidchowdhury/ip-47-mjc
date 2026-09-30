@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Booking Card</title>
+    <link rel="stylesheet" href="trial.css">
+    <style>
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(212, 210, 210);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+  
+
+  .hotel-card {
+    display: flex;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.297);
+    width: 700px;
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .hotel-card:hover{
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.699);
+  }
+  
+
+  .hotel-image {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .hotel-info {
+    flex-grow: 1;
+    padding: 10px 15px;
+  }
+  
+  .hotel-info h2 {
+    margin: 0;
+    font-size: 18px;
+    color: #FF5400;
+  }
+  
+  .stars {
+    color: gold;
+  }
+  
+  .location {
+    color: #666;
+    font-size: 14px;
+  }
+  
+  .feature {
+    font-size: 14px;
+    color: #008009;
+    margin: 5px 0;
+  }
+  
+  .room-type {
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .benefits {
+    font-size: 13px;
+    color: #007600;
+    margin-top: 5px;
+  }
+  
+  .price-section {
+    text-align: right;
+    padding: 10px;
+  }
+  
+  .review-score {
+    background: #003580;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 14px;
+  }
+  
+  .review-score span {
+    font-size: 12px;
+    color: #333;
+    margin-left: 5px;
+  }
+  
+  .price {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 5px 0;
+  }
+  
+  .taxes {
+    font-size: 12px;
+    color: #777;
+  }
+  
+  .availability-btn {
+    background: #FF5400;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .availability-btn:hover {
+    background: #9f2200;
+  }
+
+  @media (max-width: 768px) {
+    .hotel-card {
+        flex-direction: column;
+        width: 90%;
+    }
+    
+    .hotel-image {
+        width: 100%;
+    }
+  
+    .price-section {
+        text-align: center;
+    }
+  }
+  
+  .blocks{
+      gap: 20px;
+  }
+  
+
+
+    </style>
+</head>
+<body>
+
+  <section>
+    <!-- Five-Star Eco Resort -->
+    <div class="hotel-card">
+      <img src="hotel-img/sundorban/pic-2.webp" alt="Sundarbans Royal Eco Resort" class="hotel-image">
+      <div class="hotel-info">
+          <h2>Sundarbans Royal Eco Resort <span class="stars">★★★★★</span></h2>
+          <p class="location">Khulna • Near Sundarbans Mangrove Forest</p>
+          <p class="room-type"><strong>Luxury Cottage</strong> <br> 1 King-size bed</p>
+          <p class="benefits">
+            <span>✔ All-inclusive meals</span> <br>
+            <span>✔ Guided Sundarbans Safari</span> <br>
+            <span>✔ Free cancellation</span> <br>
+            <span>✔ River & Forest Views</span>
+          </p>
+      </div>
+      <div class="price-section">
+          <p class="price">BDT 25,000</p>
+          <p class="taxes">+BDT 3,500 taxes and charges</p>
+          <button class="availability-btn">See availability</button>
+      </div>
+    </div>
+  
+    <!-- Four-Star Eco Lodge -->
+    <div class="hotel-card">
+      <img src="hotel-img/sundorban/pic-3.jpg" alt="Mangrove Paradise Lodge" class="hotel-image">
+      <div class="hotel-info">
+          <h2>Mangrove Paradise Lodge <span class="stars">★★★★</span></h2>
+          <p class="location">Khulna • Riverbank Location</p>
+          <p class="room-type"><strong>Deluxe Room</strong> <br> 1 Queen-size bed</p>
+          <p class="benefits">
+            <span>✔ Complimentary Breakfast</span> <br>
+            <span>✔ Free cancellation</span> <br>
+            <span>✔ Wildlife Viewing Deck</span> <br>
+            <span>✔ Boat Safari Access</span>
+          </p>
+      </div>
+      <div class="price-section">
+          <p class="price">BDT 18,000</p>
+          <p class="taxes">+BDT 2,500 taxes and charges</p>
+          <button class="availability-btn">See availability</button>
+      </div>
+    </div>
+  
+    <!-- Three-Star Forest Inn -->
+    <div class="hotel-card">
+      <img src="hotel-img/bandorban/pic-1.jpg" alt="Sundarbans Green Retreat" class="hotel-image">
+      <div class="hotel-info">
+          <h2>Sundarbans Green Retreat <span class="stars">★★★</span></h2>
+          <p class="location">Khulna • 5 km from Sundarbans</p>
+          <p class="room-type"><strong>Standard Double Room</strong> <br> 1 double bed</p>
+          <p class="benefits">
+            <span>✔ Breakfast included</span> <br>
+            <span>✔ Free WiFi</span> <br>
+            <span>✔ Birdwatching Tours</span>
+          </p>
+      </div>
+      <div class="price-section">
+          <p class="price">BDT 10,000</p>
+          <p class="taxes">+BDT 1,800 taxes and charges</p>
+          <button class="availability-btn">See availability</button>
+      </div>
+    </div>
+  
+    <!-- Two-Star Budget Stay -->
+    <div class="hotel-card">
+      <img src="hotel-img/sundorban/pic-1.jpg" alt="Sundarbans Budget Lodge" class="hotel-image">
+      <div class="hotel-info">
+          <h2>Sundarbans Budget Lodge <span class="stars">★★</span></h2>
+          <p class="location">Khulna • 8 km from Sundarbans</p>
+          <p class="room-type"><strong>Economy Room</strong> <br> 1 twin bed</p>
+          <p class="benefits">
+            <span>✔ Free WiFi</span> <br>
+            <span>✔ Budget-friendly</span> <br>
+            <span>✔ Local Guide Services</span>
+          </p>
+      </div>
+      <div class="price-section">
+          <p class="price">BDT 6,000</p>
+          <p class="taxes">+BDT 1,200 taxes and charges</p>
+          <button class="availability-btn">See availability</button>
+      </div>
+    </div>
+  
+    <!-- One-Star Eco Camp -->
+    <div class="hotel-card">
+      <img src="hotel-img/sundorban/pic-5.jpg" alt="Tiger Trail Eco Camp" class="hotel-image">
+      <div class="hotel-info">
+          <h2>Tiger Trail Eco Camp <span class="stars">★</span></h2>
+          <p class="location">Khulna • 10 km from Sundarbans</p>
+          <p class="room-type"><strong>Basic Tent</strong> <br> Shared camping area</p>
+          <p class="benefits">
+            <span>✔ Affordable camping</span> <br>
+            <span>✔ Campfire & Local Cuisine</span> <br>
+            <span>✔ Adventure Trekking</span>
+          </p>
+      </div>
+      <div class="price-section">
+          <p class="price">BDT 3,500</p>
+          <p class="taxes">+BDT 600 taxes and charges</p>
+          <button class="availability-btn">See availability</button>
+      </div>
+    </div>
+  
+  </section>
+
+  <script>
+    let elements = document.getElementsByClassName('availability-btn');
+  
+  for (let i = 0; i < elements.length; i++) {
+    elements[i].addEventListener('click', function() {
+      window.location.href = "booking_info.html";
+    });
+  }
+  
+  </script>
+  
+  </body>
+</html>
